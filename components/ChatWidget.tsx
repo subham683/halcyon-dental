@@ -178,7 +178,7 @@ export default function ChatWidget() {
         </div>
 
         <p className="mx-auto mt-4 max-w-2xl text-center text-xs text-ink/40">
-          Hal gives general information only and isn't a substitute for
+          Hal gives general information only and isn&apos;t a substitute for
           professional diagnosis. For emergencies, call (555) 010-2323.
         </p>
       </div>
