@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf9f5;
+  color: #142524;
+}
+
+::selection {
+  background-color: #bfe8d9;
+  color: #0d3b36;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid #0d3b36;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Slim, quiet scrollbar for the chat panel */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(13, 59, 54, 0.18);
+  border-radius: 999px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.form-input {
+  @apply w-full rounded-xl border border-sand bg-ivory px-4 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink/35 focus:border-deep;
+}
+
+.contact-input {
+  @apply w-full rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 text-sm text-ivory outline-none transition-colors placeholder:text-ivory/35 focus:border-mint;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
