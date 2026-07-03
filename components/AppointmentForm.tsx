@@ -72,7 +72,7 @@ export default function AppointmentForm() {
             </h2>
             <SmileDivider className="mt-4" width={140} />
             <p className="mt-5 max-w-sm text-ink/60">
-              Tell us a bit about what you need. We'll confirm your exact
+              Tell us a bit about what you need. We&apos;ll confirm your exact
               slot by email or phone within one business day.
             </p>
 
@@ -187,7 +187,7 @@ export default function AppointmentForm() {
                 onChange={(e) => update("isNewPatient", e.target.checked)}
                 className="h-4 w-4 rounded border-sand text-deep focus:ring-deep"
               />
-              I'm a new patient
+              I&apos;m a new patient
             </label>
 
             <button
